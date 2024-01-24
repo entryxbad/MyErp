@@ -1,11 +1,11 @@
 import {SafeAreaView, StyleSheet} from 'react-native'
 
-import LoginScreen from './src/auth/LoginScreen'
+import MainScreen from './src/screens/MainScreen'
 
 const App = () => {
   return (
     <SafeAreaView style={styles.container}>
-      <LoginScreen />
+      <MainScreen />
     </SafeAreaView>
   )
 }

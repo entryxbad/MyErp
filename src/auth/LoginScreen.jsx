@@ -8,13 +8,25 @@ const LoginScreen = () => {
         <Text style={styles.headerText}>Авторизация</Text>
       </View>
       <View>
-        <TextInput style={styles.input} placeholder="Логин" />
+        <TextInput
+          style={styles.input}
+          placeholder="Логин"
+          autoCapitalize="none"
+        />
       </View>
       <View>
-        <TextInput style={styles.input} placeholder="Пароль" />
+        <TextInput
+          style={styles.input}
+          placeholder="Пароль"
+          secureTextEntry={true}
+        />
       </View>
       <View>
-        <TextInput style={styles.input} placeholder="Номер телефона" />
+        <TextInput
+          style={styles.input}
+          placeholder="Номер телефона"
+          keyboardType="numeric"
+        />
       </View>
       <TouchableOpacity style={styles.buttonView}>
         <Text style={styles.buttonText}>Войти</Text>
@@ -39,6 +51,7 @@ const styles = StyleSheet.create({
     height: normalize(40),
     fontSize: normalize(16),
     marginBottom: 30,
+    padding: 10,
   },
   headerText: {
     fontSize: normalize(25),
